@@ -1,0 +1,336 @@
+input::file-selector-button {
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  padding: 0.5em 0.7em;
+  margin-right: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(36, 36, 36);
+  opacity: 0.9;
+}
+
+.nav {
+  background-color: rgb(0, 0, 0);
+  height: 42px;
+  justify-content: center;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: white;
+  background-color: inherit;
+  border-color: transparent;
+  border-bottom: 2px solid white;
+  transition: all 0.4s ease-in;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: hsla(0, 0%, 100%, 0.7);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.tab-content > .active {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-tabs .nav-link {
+  color: hsla(0, 0%, 100%, 0.7);
+  margin-bottom: -1px;
+  background: 0 0;
+  border: none;
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+}
+
+.breeds-sel-head {
+  margin: 10px 0px;
+}
+
+.form-select {
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: inherit !important;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.vote-main {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.vote-main .whle-container {
+  width: 70%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.vote-main .whle-container .like-dislike {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.img-containera {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+
+.imagesss {
+  max-width: 100%;
+  max-height: 400px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.whole-img-manager {
+  position: relative;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.fav-it {
+  color: black;
+  background-color: green;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  display: none;
+  font-size: 20px;
+  padding: 20px;
+  transition: all 6000ms ease-in;
+}
+
+.whole-img-manager:hover .fav-it {
+  opacity: 0.8;
+  display: block;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+
+#onlikebtn, #ondislikebtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#onlikebtn:hover, #ondislikebtn:hover {
+  background-color: rgba(22, 21, 21, 0.144);
+}
+
+.unfav-it {
+  color: black;
+  background-color: red;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  display: none;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.whole-img-manager:hover .unfav-it {
+  display: block;
+}
+
+.hearta {
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 0px;
+}
+
+.whle-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+.whole-grid-manager {
+  position: relative;
+  min-height: 165px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 60px;
+  width: 51%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  row-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  justify-items: center;
+  place-content: center;
+}
+
+.dog-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.dog-data .mai-name {
+  font-size: 28px;
+  font-weight: 600;
+}
+.dog-data .mai-id {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.carousel {
+  margin-top: 50px;
+}
+
+.w-100 {
+  width: 70%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.per-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.per-img:hover .small-unfav {
+  visibility: visible;
+}
+
+.small-unfav {
+  cursor: pointer;
+  visibility: hidden;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  bottom: 0px;
+  height: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.whole-form-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  padding: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  min-height: 400px;
+}
+
+.notice {
+  position: absolute;
+  bottom: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.input-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  margin-bottom: 50px;
+}
+
+.output-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  min-height: 350px;
+}
+
+.inside-abs {
+  position: absolute;
+}
+
+.input-img-in {
+  width: 450px;
+  top: 140px;
+  opacity: 0;
+  position: absolute;
+  height: 350px;
+}
+
+.search-manager {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.whole-grid-search-manager {
+  min-height: 155px;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 60px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  row-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  justify-items: center;
+  place-content: center;
+}
+
+.filters {
+  margin-top: 30px;
+}
+
+.form-search-select, .form-search-style-select {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 125px;
+}
+
+.form-search-count-select {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 45%;
+}/*# sourceMappingURL=style.css.map */
